@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from "react-redux";
-import { doSomething } from "./../actions/primaryActions"
+import { doSomething, setName } from "./../actions/primaryActions"
+import PropertiesDetail from './../components/PropertiesDetail'
 
-
- class Dashboard extends Component {
+class Dashboard extends Component {
+  constructor(context, props) {
+    super(context, props);
+    this.state = {
+      activateInput: false,
+      nameUserSet: "",
+    }
+  }
   doSomethingMore() {
     this.props.dispatch(doSomething())
   }
@@ -12,12 +19,30 @@ import { doSomething } from "./../actions/primaryActions"
   render() {
     let { primaryData } = this.props;
     return (
-      
-      <div>
-      <button onClick={this.doSomethingMore.bind(this)}>Randomize</button>
-      <div>
-        <span><strong>Response from action : </strong>{primaryData}</span>
-      </div>
+
+      <div className="row">
+
+        <h1>
+          Bienvenid@ de nuevo {this.props.nameUser && this.props.nameUser}
+        </h1>
+        <button onClick={() => {
+          this.setState({ activateInput: !this.state.activateInput })
+        }}>No eres  {this.props.nameUser && this.props.nameUser}?</button>
+
+        {
+          this.state.activateInput ? <div>
+            <input type="text" value={this.state.nameUserSet} onChange={(e) => {
+              this.setState({ nameUserSet: e.target.value })
+            }} />
+            <button onClick={() => {
+              this.props.dispatch(setName(this.state.nameUserSet))
+              this.setState({ activateInput: false })
+            }}>Cambiar nombre</button></div> : ""
+        }
+
+        <div className="col-12">
+      <PropertiesDetail properties={this.props.properties} />
+        </div>
       </div>
     )
   }
@@ -25,6 +50,7 @@ import { doSomething } from "./../actions/primaryActions"
 
 export default connect(state => {
   return {
-    primaryData: state.primaryData.data.idUser
+    nameUser: state.primaryData.data.name,
+    properties: state.primaryData.data.properties
   };
 })(Dashboard);

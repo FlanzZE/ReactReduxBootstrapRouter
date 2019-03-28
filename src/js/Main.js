@@ -7,10 +7,10 @@ import "./Main.scss";
 
 //Pages
 import Dashboard from "./pages/Dashboard";
-import Properties from "./pages/Properties";
-
+import Detail from "./pages/Detail";
 //Components
 import Header from "./components/Header";
+
 
 class Main extends React.Component {
   componentDidMount() {}
@@ -18,17 +18,17 @@ class Main extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className={`container mainContainer`}>
+        <div className="container-fluid mainContainer">
           <div className="row">
             <Header />
           </div>
-          <div className="row">
+          <div className="row content-pages">
             <Switch>
               <Route exact path="/" component={Dashboard} />
               <Route
                 exact
-                path="/properties"
-                component={Properties}
+                path="/detail"
+                component={Detail}
               />
             </Switch>
           </div>

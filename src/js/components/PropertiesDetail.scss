@@ -1,0 +1,11 @@
+.details-Container{
+    margin-top: 2em;
+    display: flex;
+    padding: 1em;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+.card{
+    max-width: 30%;
+}
+}
