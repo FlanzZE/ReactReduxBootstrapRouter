@@ -1,0 +1,11 @@
+div.stepperCss {
+  @media (max-width: 380px) {
+    align-items: start;
+    flex-direction: column;
+  }
+  .stepCss {
+    @media (max-width: 380px) {
+      padding: 0;
+    }
+  }
+}

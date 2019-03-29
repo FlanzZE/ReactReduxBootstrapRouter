@@ -6,7 +6,7 @@ import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-
+import "./Stepper.scss";
 //Steps
 import Address from "./Steps/Address";
 import OwnerInfo from "./Steps/OwnerInfo";
@@ -158,7 +158,7 @@ class HorizontalLinearStepper extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Stepper activeStep={activeStep}>
+        <Stepper classes={{ root: "stepperCss" }} activeStep={activeStep}>
           {steps.map((label, index) => {
             const props = {};
             const labelProps = {};
@@ -171,7 +171,7 @@ class HorizontalLinearStepper extends React.Component {
               props.completed = false;
             }
             return (
-              <Step key={label} {...props}>
+              <Step classes={{ root: "stepCss" }} key={label} {...props}>
                 <StepLabel {...labelProps}>{label}</StepLabel>
               </Step>
             );
