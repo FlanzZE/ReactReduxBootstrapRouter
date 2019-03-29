@@ -1,24 +1,21 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Link, BrowserRouter as Router } from "react-router-dom";
+import "./Header.scss";
 export class Header extends Component {
-  static propTypes = {
-
-  }
+  static propTypes = {};
 
   render() {
     return (
-      <div>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+      <nav class="navbar navbar-dark bg-primary nav-header">
+        <ul className="list-menu">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
         </ul>
-      </div>
-    )
+      </nav>
+    );
   }
 }
 
-export default Header
+export default Header;
