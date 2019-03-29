@@ -1,584 +1,743 @@
 // A single reducer
-export default function reducer(state = {
-  data: {
-    idUser: null,
-    name: 'Victor Manuel Mexicano',
-    properties: [
-      {
-        id: 1,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+export default function reducer(
+  state = {
+    data: {
+      idUser: null,
+      name: "Victor Manuel Mexicano",
+      properties: [
+        {
+          id: 1,
+          image: "http://placeimg.com/640/480/arch?t=1",
+          title: "Casa en las lomas",
+          description: "Casa con excelente ubicacion ",
+          price: 5000000,
+          owner: {
+            name: "Victor Manuel Mexicano Mondragon",
+            email: "vmmexicano@gmail.com",
+            tel: "5551682302"
+          },
+          place: {
+            street: "Av. Paseo de la reforma 805",
+            country: "Ciudad de México",
+            county: "CDMX",
+            state: "Ciudad de mexico",
+            city: "Mexico"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 2,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 2,
+          image: "http://placeimg.com/640/480/arch?t=2",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 3,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 3,
+          image: "http://placeimg.com/640/480/arch?t=3",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 4,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 4,
+          image: "http://placeimg.com/640/480/arch?t=4",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 5,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 5,
+          image: "http://placeimg.com/640/480/arch?t=5",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 6,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 6,
+          image: "http://placeimg.com/640/480/arch?t=6",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 7,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 7,
+          image: "http://placeimg.com/640/480/arch?t=7",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 8,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 8,
+          image: "http://placeimg.com/640/480/arch?t=8",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 9,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 9,
+          image: "http://placeimg.com/640/480/arch?t=9",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 10,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 10,
+          image: "http://placeimg.com/640/480/arch?t=10",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 11,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 11,
+          image: "http://placeimg.com/640/480/arch?t=11",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 12,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 12,
+          image: "http://placeimg.com/640/480/arch?t=12",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 13,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 13,
+          image: "http://placeimg.com/640/480/arch?t=13",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 14,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 14,
+          image: "http://placeimg.com/640/480/arch?t=14",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 15,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 15,
+          image: "http://placeimg.com/640/480/arch?t=15",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 16,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 16,
+          image: "http://placeimg.com/640/480/arch?t=16",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 17,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 17,
+          image: "http://placeimg.com/640/480/arch?t=17",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 18,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 18,
+          image: "http://placeimg.com/640/480/arch?t=18",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 19,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
+        {
+          id: 19,
+          image: "http://placeimg.com/640/480/arch?t=19",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
         },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 19,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 20,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 21,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 22,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 23,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 24,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 25,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 26,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 27,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 28,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 28,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 29,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 30,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 31,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 32,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      }, {
-        id: 33,
-        image:'',
-        price: 5000000,
-        owner: {
-          name: "",
-          email: "",
-          tel: ""
-        },
-        place: {
-          street: "",
-          country: "",
-          county: "",
-          state: "",
-          city: ""
-        }
-      },
-    ]
- 
-  },
-  error: null,
-}, action) {
 
+        {
+          id: 20,
+          image: "http://placeimg.com/640/480/arch?t=20",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 21,
+          image: "http://placeimg.com/640/480/arch?t=21",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 22,
+          image: "http://placeimg.com/640/480/arch?t=22",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 23,
+          image: "http://placeimg.com/640/480/arch?t=23",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 24,
+          image: "http://placeimg.com/640/480/arch?t=24",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 25,
+          image: "http://placeimg.com/640/480/arch?t=25",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 26,
+          image: "http://placeimg.com/640/480/arch?t=26",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 27,
+          image: "http://placeimg.com/640/480/arch?t=27",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 28,
+          image: "http://placeimg.com/640/480/arch?t=28",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+
+        {
+          id: 29,
+          image: "http://placeimg.com/640/480/arch?t=29",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 30,
+          image: "http://placeimg.com/640/480/arch?t=30",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 31,
+          image: "http://placeimg.com/640/480/arch?t=31",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 32,
+          image: "http://placeimg.com/640/480/arch?t=32",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        },
+        {
+          id: 33,
+          image: "http://placeimg.com/640/480/arch?t=33",
+          title: "Neque porro quisquam est...",
+          description:
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..",
+          price: 5000000,
+          owner: {
+            name: "Jeffrey ",
+            email: "fakeEmail@fake.com",
+            tel: "01800000000"
+          },
+          place: {
+            street: "fifth avenue",
+            country: "USA",
+            county: "Carpenters ville",
+            state: "Alabama",
+            city: "Chicago"
+          }
+        }
+      ]
+    },
+    error: null
+  },
+  action
+) {
   switch (action.type) {
     case "DO_SOMETHING": {
       // returns a copy of the state with new data
-      return { state }
+      return { state };
     }
     case "SET_NAME": {
-      return { ...state, data:{...state.data,name:action.payload} , error: false }
+      return {
+        ...state,
+        data: { ...state.data, name: action.payload },
+        error: false
+      };
+    }
+    case "SET_OWN_INFO": {
+      const filteredObject = state.data.properties.filter(selectedObject => {
+        return selectedObject.id == action.payload.id;
+      });
+      filteredObject[0].owner = action.payload.owner;
+      const objectsPropertiesState = state.data.properties.filter(
+        selectedObject => {
+          return selectedObject.id != action.payload.id;
+        }
+      );
+      objectsPropertiesState.push(filteredObject[0]);
+
+      return {
+        ...state,
+        data: { ...state.data, properties: objectsPropertiesState },
+        error: false
+      };
+    }
+    case "SET_PLACE_INFO": {
+      const filteredObject = state.data.properties.filter(selectedObject => {
+        return selectedObject.id == action.payload.id;
+      });
+      filteredObject[0].place = action.payload.place;
+      const objectsPropertiesState = state.data.properties.filter(
+        selectedObject => {
+          return selectedObject.id != action.payload.id;
+        }
+      );
+      objectsPropertiesState.push(filteredObject[0]);
+
+      return {
+        ...state,
+        data: { ...state.data, properties: objectsPropertiesState },
+        error: false
+      };
+    }
+    case "SET_PRICE": {
+      const filteredObject = state.data.properties.filter(selectedObject => {
+        return selectedObject.id == action.payload.id;
+      });
+      filteredObject[0].price = action.payload.price;
+      const objectsPropertiesState = state.data.properties.filter(
+        selectedObject => {
+          return selectedObject.id != action.payload.id;
+        }
+      );
+      objectsPropertiesState.push(filteredObject[0]);
+
+      return {
+        ...state,
+        data: { ...state.data, properties: objectsPropertiesState },
+        error: false
+      };
     }
   }
-  return state
+  return state;
 }
