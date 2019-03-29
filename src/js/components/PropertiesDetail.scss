@@ -1,11 +1,14 @@
-.details-Container{
-    margin-top: 2em;
-    display: flex;
-    padding: 1em;
-    flex-flow: wrap;
-    justify-content: space-around;
+.details-Container {
+  margin-top: 2em;
+  display: flex;
+  padding: 1em;
+  flex-flow: wrap;
+  justify-content: space-around;
 
-.card{
+  .card {
+    @media (max-width: 768px) {
+      max-width: 80%;
+    }
     max-width: 30%;
-}
+  }
 }
